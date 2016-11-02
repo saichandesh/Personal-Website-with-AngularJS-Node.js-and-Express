@@ -1,0 +1,46 @@
+{
+  "name": "personal-website-front-end",
+  "version": "1.0.0",
+  "description": "Description about me ,my projects , work experience and ceritifications",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://saichandesh@bitbucket.org/saichandesh/personal-website-front-end.git"
+  },
+  "keywords": [
+    "angularjs",
+    "nodejs",
+    "software",
+    "developer",
+    "java",
+    "html",
+    "css",
+    "bootstrap",
+    "express",
+    "java",
+    "spring",
+    "mysql",
+    "sql",
+    "sql",
+    "server",
+    "swift",
+    "git",
+    "grunt",
+    "gulp",
+    "jasmine",
+    "karma",
+    "php",
+    "python",
+    "c++",
+    "c",
+    "agile",
+    "waterfall",
+    "bitbucket"
+  ],
+  "author": "Sai Chandesh Gurramkonda",
+  "license": "ISC",
+  "homepage": "http://www.saichandesh.com/",
+  "devDependencies": {
+    "bower": "^1.7.9"
+  }
+}

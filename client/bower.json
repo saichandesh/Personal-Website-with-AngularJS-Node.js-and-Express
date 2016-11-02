@@ -1,0 +1,47 @@
+{
+  "name": "personal-website-front-end",
+  "description": "Description about me ,my projects , work experience and ceritifications",
+  "main": "index.html",
+  "authors": [
+    "Sai Chandesh Gurramkonda"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angularjs",
+    "nodejs",
+    "software",
+    "developer",
+    "java",
+    "html",
+    "css",
+    "bootstrap",
+    "express",
+    "java",
+    "spring",
+    "mysql",
+    "sql",
+    "sql",
+    "server",
+    "swift",
+    "git",
+    "grunt",
+    "gulp",
+    "jasmine",
+    "karma",
+    "php",
+    "python",
+    "c++",
+    "c",
+    "agile",
+    "waterfall",
+    "bitbucket"
+  ],
+  "homepage": "http://www.saichandesh.com/",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "angular-ui-router": "^0.3.1"
+  }
+}
