@@ -1,0 +1,11 @@
+### Application ###
+
+# Dependency directories
+./client/node_modules
+
+# Bower Components
+./client/bower_components
+
+# Generated files from gulp
+./client/assets/js
+./client/assets/css
