@@ -1,12 +1,9 @@
-<div class="container col-sm-12">
-		<div class="row">
-			<!-- <img src="images/first.png" id="image1"> -->
-			<img src="../../assets/images/chandesh.jpg" id="image2">
-			<h2 id="header">Hi! I'M <span id="head1">SAI CHANDESH GURRAMKONDA</span><br/>
-				<span id="content">{{aboutme.contentInfo}}</span>
-				<br/><br/>
-				<button type="button" class="btn btn-default"><i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;HIRE ME</button>	
-			</h2>
-			<div id="arrow"></div><div id="direction"><i class="fa fa-angle-double-down fa-3x circle-icon" aria-hidden="true"></i></div>
-		</div>
-	</div>
+<div id="aboutbody">
+	<img src="../../assets/images/chandesh.jpg" id="image"><br/>
+	<h2 id="header">Hi! I'M <span id="head1">SAI CHANDESH GURRAMKONDA</span><br/>
+		<span id="content">{{aboutme.contentInfo}}</span>
+		<br/><br/>
+		<button type="button" class="btn btn-default"><i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;HIRE ME</button>	
+	</h2>
+	<span id="direction" ng-click="aboutme.jump()"><i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i></span>
+</div>

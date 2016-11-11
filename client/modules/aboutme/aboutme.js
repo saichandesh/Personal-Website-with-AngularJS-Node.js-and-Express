@@ -5,6 +5,11 @@
 		var self = this;
 
 		this.contentInfo = "Seeking Full Time Opportunities from May'17 | Master's in Computer Science in University of Central Florida";
+		
+		this.jump = function(){
+			var objControl=document.getElementById("about");
+			objControl.scrollTop = objControl.offsetTop;
+		}
 	}
 
 

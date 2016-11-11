@@ -46,11 +46,7 @@
 		])
 		.otherwise('/');
 
-		// $locationProvider
-		// .html5Mode(true)
-		// .hashPrefix('!');
-
-		// $logProvider.debugEnabled(ConStore.debugInfoEnabled);
+		$locationProvider.html5Mode({enabled:true , requireBase: false});
 	};
 
 	angular.module('personalWebsite', [

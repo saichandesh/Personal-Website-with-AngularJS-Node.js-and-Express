@@ -1,17 +1,19 @@
-body {
-	background-image: url("../images/first.png");
-    background-size: 100% 90vh;
-    background-repeat: no-repeat;
-}
+// -----[ Color Palette ]-------------------------------------------------------
+$orange : #F56D45;
+$white : white;
+$lightblue : #00e2ff;
+$black : #000000;
+$grey : #727272;
+
 #navigation {
-	background-color: white;
-	border: white;
+	background-color: $white;
+	border: $white;
 	font-weight: 500;
 	font-size: 15px;
-
-
+	margin: 0px;
+	position: relative;
 	.navbar-toggle{
-		background-color: white;
+		background-color: $white;
 		float: left;
 		margin-left: 15px;
 		border-style: none;
@@ -20,14 +22,14 @@ body {
 		margin-right: 10vh;
 	}
 	.active a{
-		border-bottom: solid #F56D45;
-		background-color: white;
+		border-bottom: solid $orange;
+		background-color: $white;
 	}
 	a {
-		color: #727272;
+		color: $grey;
 		&:hover {
-		    background-color: #F56D45;
-		    color: white;
+		    background-color: $orange;
+		    color: $white;
 		}
 	}
 }
@@ -35,7 +37,7 @@ body {
 @media (max-width: 1000px) {
 	#navigation{
 		.navbar-toggle{
-			background-color: white;
+			background-color: $white;
 			float: left;
 			margin-left: 15px;
 			border-style: none;

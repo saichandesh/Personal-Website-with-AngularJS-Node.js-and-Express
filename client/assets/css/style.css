@@ -1,0 +1,115 @@
+#navigation {
+  background-color: white;
+  border: white;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0px;
+  position: relative; }
+  #navigation .navbar-toggle {
+    background-color: white;
+    float: left;
+    margin-left: 15px;
+    border-style: none; }
+  #navigation .navbar-right {
+    margin-right: 10vh; }
+  #navigation .active a {
+    border-bottom: solid #F56D45;
+    background-color: white; }
+  #navigation a {
+    color: #727272; }
+    #navigation a:hover {
+      background-color: #F56D45;
+      color: white; }
+
+@media (max-width: 1000px) {
+  #navigation .navbar-toggle {
+    background-color: white;
+    float: left;
+    margin-left: 15px;
+    border-style: none;
+    display: block; }
+  #navigation .navbar-right {
+    margin-right: 10vh; }
+  #navigation .navbar-collapse.collapse {
+    display: none !important;
+    height: auto !important;
+    overflow: visible !important; }
+  #navigation .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px; }
+    #navigation .navbar-nav > li {
+      float: none; }
+      #navigation .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px; }
+  #navigation .collapse.in {
+    display: block !important;
+    margin-left: 10vw; }
+  #navigation .collapsing {
+    margin-left: 10vw; } }
+
+@media (max-width: 1000px) and (max-width: 600px) {
+  #navigation .collapse.in {
+    margin-left: 15vw; }
+  #navigation .collapsing {
+    margin-left: 15vw; } }
+
+#aboutbody {
+  background-image: url("../../assets/images/first.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1; }
+
+#image {
+  height: 25vh;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 17vh; }
+
+#header {
+  color: white;
+  font-family: serif;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+  margin: auto; }
+
+#head1 {
+  color: #00e2ff;
+  text-shadow: 1px 1px 15px #000000; }
+
+#content {
+  font-weight: 200;
+  font-size: 15px;
+  text-shadow: 1px 1px 15px #000000; }
+
+#direction {
+  position: absolute;
+  bottom: 0px;
+  left: 50vw;
+  color: #00e2ff;
+  text-shadow: 0px 1px 15px #000000; }
+
+.circle-icon {
+  padding: 25px; }
+
+#header .btn-default {
+  color: white;
+  border-color: transparent;
+  background-color: #00e2ff;
+  text-shadow: 0px 1px 15px #000000;
+  box-shadow: 1px 1px 15px #000000;
+  font-size: 18px; }
+
+@media (max-width: 768px) {
+  #header {
+    font-size: 20px; }
+  #content {
+    font-size: 12px; } }
