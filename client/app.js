@@ -52,7 +52,8 @@
 	angular.module('personalWebsite', [
 		'ui.router',
 		'ngResource',
-		'ngAnimate'
+		'ngAnimate',
+		'ngSanitize'
 	])
 
 	.config([

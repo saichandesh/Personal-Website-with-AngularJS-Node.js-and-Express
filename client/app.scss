@@ -12,6 +12,7 @@ $grey : #727272;
 	font-size: 15px;
 	margin: 0px;
 	position: relative;
+	overflow-x: hidden;
 	.navbar-toggle{
 		background-color: $white;
 		float: left;
@@ -65,19 +66,23 @@ $grey : #727272;
 		    }
 	    }
 	    .collapse.in{
+	    	overflow-x: hidden;
 	      	display:block !important;
 	      	margin-left: 10vw;
 	  	}
 	  	.collapsing{
+	  	  overflow-x: hidden;
 	      margin-left: 10vw;
 	  	}
 	}
   	@media (max-width: 600px){
 	  	#navigation {
 		  	.collapse.in{
+		  		overflow-x: hidden;
 		      	margin-left: 15vw;
 		  	}
 		  	.collapsing{
+		  		overflow-x: hidden;
 		      	margin-left: 15vw;
 		  	}
 		}

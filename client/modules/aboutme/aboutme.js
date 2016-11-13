@@ -19,7 +19,7 @@
 		$stateProvider
 		.state('aboutme', {
 			url: '/aboutme',
-			templateUrl: 'modules/aboutme/aboutme.html',
+			templateUrl: './modules/aboutme/aboutme.html',
 			controllerAs: 'aboutme',
 			controller: 'abooutmeController'
 		});

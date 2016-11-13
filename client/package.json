@@ -1,11 +1,11 @@
 {
-  "name": "personal-website-front-end",
+  "name": "personal-website",
   "version": "1.0.0",
   "description": "Description about me ,my projects , work experience and ceritifications",
   "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "git+https://saichandesh@bitbucket.org/saichandesh/personal-website-front-end.git"
+    "url": "git+https://github.com/saichandesh/Personal-Website-with-AngularJS-Node.js-and-Express.git"
   },
   "keywords": [
     "angularjs",
@@ -43,6 +43,7 @@
   "devDependencies": {
     "bower": "^1.7.9",
     "connect-history-api-fallback": "^1.3.0",
+    "connect-modrewrite": "^0.9.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-connect": "^5.0.0",

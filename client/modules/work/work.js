@@ -1,11 +1,19 @@
 (function(){
 	'use strict';
 
-	var workController = function(){
+	var workController = function(workService){
 
 		var self = this;
 
-		this.contentInfo="workr";
+		this.init = function(){
+			workService.getWorkContent().then(function(resp){
+				self.contents = resp;
+			},function(err){
+				console.log("Error in loading work content" + err);
+			});
+		};
+
+		this.init();
 	};
 
 	angular
@@ -20,6 +28,7 @@
 				});
 		}])
 		.controller('workController' , [
+			'workService',
 			workController
 		]);
 })();

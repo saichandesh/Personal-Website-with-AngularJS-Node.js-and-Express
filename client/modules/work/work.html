@@ -1,2 +1,8 @@
-
-			<p>{{work.contentInfo}}</p>
+<div id="workcontent">
+	<div id="workbody">
+		<div ng-repeat="content in work.contents">
+			<h3>{{content.title}}</h3>
+			<p ng-bind-html="content.description"></p>
+		</div>
+	</div>
+</div>

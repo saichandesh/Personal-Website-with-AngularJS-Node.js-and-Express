@@ -1,0 +1,53 @@
+{
+  "name": "personal-website-back-end",
+  "version": "1.0.0",
+  "description": "Description about me ,my projects , work experience and ceritifications",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saichandesh/Personal-Website-with-AngularJS-Node.js-and-Express.git"
+  },
+  "keywords": [
+    "angularjs",
+    "nodejs",
+    "software",
+    "developer",
+    "java",
+    "html",
+    "css",
+    "bootstrap",
+    "express",
+    "java",
+    "spring",
+    "mysql",
+    "sql",
+    "sql",
+    "server",
+    "swift",
+    "git",
+    "grunt",
+    "gulp",
+    "jasmine",
+    "karma",
+    "php",
+    "python",
+    "c++",
+    "c",
+    "agile",
+    "waterfall",
+    "bitbucket"
+  ],
+  "author": "Sai Chandesh Gurramkonda",
+  "license": "ISC",
+  "homepage": "http://www.saichandesh.com/",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "connect-history-api-fallback": "^1.3.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-nodemon": "^2.2.1",
+    "run-sequence": "^1.2.2"
+  }
+}

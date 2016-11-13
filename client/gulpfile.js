@@ -16,7 +16,8 @@ var js = [ 'bootstrap/js/bootstrap.min.js',
 		   'bower_components/angular/angular.js',
 		   'bower_components/angular-animate/angular-animate.js',
 		   'bower_components/angular-resource/angular-resource.js',
-		   'bower_components/angular-ui-router/release/angular-ui-router.js'
+		   'bower_components/angular-ui-router/release/angular-ui-router.js',
+		   'bower_components/angular-sanitize/angular-sanitize.js'
 		 ];
 
 // -----[ Tasks ]---------------------------------------------------------------
@@ -72,15 +73,15 @@ gulp.task('sass',function(){
 
 // -----[ HTML Task ]------------
 gulp.task('html', function() {
-	return gulp.src(['index.html', './modules/**/*.html'])
+	return gulp.src(['./index.html', './modules/**/*.html'])
 	.pipe(connect.reload());
 });
 
 // -----[ Watch Task ]------------
 gulp.task('watch',function(){
-	gulp.watch(['index.html','./modules/**/*.html'],['html']);
-	gulp.watch(['app.js','./modules/**/*.js'], ['concatjs']);
-	gulp.watch(['app.scss','./modules/**/*.scss'], ['sass']);
+	gulp.watch(['./index.html','./modules/**/*.html'],['html']);
+	gulp.watch(['./app.js','./modules/**/*.js'], ['concatjs']);
+	gulp.watch(['./app.scss','./modules/**/*.scss'], ['sass']);
 });
 
 // -----[ Default Task ]------------
