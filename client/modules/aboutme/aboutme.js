@@ -1,15 +1,21 @@
 (function (){
 	'use strict';
 	
-	var abooutmeController = function(){
+	var abooutmeController = function($rootScope){
 		var self = this;
+		$rootScope.active='about'
+		$rootScope.activation = function(title){
+			$rootScope.active=title;
+		};
 
 		this.contentInfo = "Seeking Full Time Opportunities from May'17 | Master's in Computer Science in University of Central Florida";
 		
 		this.jump = function(){
-			var objControl=document.getElementById("about");
+			console.log("hint");
+			var objControl=document.getElementById("abouts");
 			objControl.scrollTop = objControl.offsetTop;
 		}
+
 	}
 
 
@@ -25,6 +31,7 @@
 		});
 	}])
 	.controller('abooutmeController', [
+		'$rootScope',
 		abooutmeController
 		]);
 })();

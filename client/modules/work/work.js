@@ -4,6 +4,7 @@
 	var workController = function(workService){
 
 		var self = this;
+		self.contents = [];
 
 		this.init = function(){
 			workService.getWorkContent().then(function(resp){

@@ -18,7 +18,7 @@
 			}
 		};
 
-		var mockURL = './modules/webservices/mock_data';
+		var devURL = 'http://localhost:8080';
 		var URL = 'http://saichandesh.me:8080';
 
 
@@ -45,7 +45,7 @@
 		APIManager.doGetAll = function(networkConfig) {
 
 			networkConfig = APIManager.genericResourceURI(networkConfig);
-			var actualURL = URL + '/' + networkConfig.url;
+			var actualURL = devURL + '/' + networkConfig.url;
 
 			var resourceObject = $resource(actualURL, networkConfig.params, {
 				get: {

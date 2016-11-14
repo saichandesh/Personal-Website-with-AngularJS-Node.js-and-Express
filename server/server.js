@@ -20,6 +20,25 @@ app.get('/work', function (req, res) {
 	});
 });
 
+
+app.get('/certificate', function (req, res) {
+	fs.readFile('./mock_data/certificateInfo.json','utf-8',function(err, data){
+			if(err){
+				return console.log("Error while writing file "+ err);
+			}
+			res.send(data);
+	});
+});
+
+app.get('/resume', function (req, res) {
+	fs.readFile('./mock_data/resumeInfo.json','utf-8',function(err, data){
+			if(err){
+				return console.log("Error while writing file "+ err);
+			}
+			res.send(data);
+	});
+});
+
 app.listen(8080, function(){
 	console.log("server started at 8080");
 });

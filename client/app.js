@@ -3,6 +3,15 @@
 
 	var AppController = function($urlRouterProvider, $locationProvider, $logProvider) {
 
+		
+		// $("button").click(function() {
+		// 	$("ul.nav").show();
+		// });
+
+		// $("ul.nav li a").click(function() {
+	 //        $("ul.nav").hide();
+		// });
+
 		$urlRouterProvider
 		.when('/resume', [
 			'$state', function($state) {

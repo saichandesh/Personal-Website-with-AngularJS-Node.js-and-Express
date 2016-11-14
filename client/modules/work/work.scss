@@ -17,6 +17,18 @@ h3{
 	height: 70vh;
 }
 
+#spinner{
+    width: 10%;
+    margin: auto;
+    margin-top: 30vh;
+}
+
+@media(max-width:750px){
+    #spinner{
+        width: 20%;
+    }    
+}
+
 ::-webkit-scrollbar {
     width: 9px;
 }

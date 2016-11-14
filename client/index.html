@@ -4,6 +4,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>Sai Chandesh Gurramkonda</title>
+	<link rel="icon" type="image/x-icon" href="./assets/images/icon.png" />
 	<meta name="description" content="" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<!-- CSS files-->
@@ -29,14 +30,14 @@
 			</button>
 		<div class="collapse navbar-collapse" id="collapsemenu">
 			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="/">About Me</a></li>
-				<li><a href="/resume">Resume</a></li>
-				<li><a href="/education">Education</a></li>
-				<li><a href="/work">Work Experience</a></li>
-				<li><a href="/projects">Projects</a></li>
-				<li><a href="/skills">Skills</a></li>
-				<li><a href="/achievements">Achivements and Certifications</a></li>
-				<li><a href="/contact">Contact</a></li>
+				<li ng-class="$root.active" ng-click="$root.activation('about')"><a href="/">About Me</a></li>
+				<li ng-class="$root.active" ng-click="$root.activation('resume')"><a href="/resume">Resume</a></li>
+				<li ng-class="$root.active" ng-click="$root.activation('education')"><a href="/education">Education</a></li>
+				<li ng-class="$root.active" ng-click="$root.activation('work')"><a href="/work">Work Experience</a></li>
+				<li ng-class="$root.active" ng-click="$root.activation('project')"><a href="/projects">Projects</a></li>
+				<li ng-class="$root.active" ng-click="$root.activation('skill')"><a href="/skills">Skills</a></li>
+				<li ng-class="$root.active" ng-click="$root.activation('achievement')"><a href="/achievements">Achivements and Certifications</a></li>
+				<li ng-class="$root.active" ng-click="$root.activation('contact')"><a href="/contact">Contact</a></li>
 			</ul>
 		</div>
 	</nav>
