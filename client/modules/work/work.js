@@ -6,6 +6,10 @@
 		var self = this;
 		self.contents = [];
 
+		this.setContent = function(content){
+			self.currentwork = content;
+		};
+
 		this.init = function(){
 			workService.getWorkContent().then(function(resp){
 				self.contents = resp;

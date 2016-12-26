@@ -1,3 +1,6 @@
+#about{
+	overflow-y : hidden;
+}
 #aboutbody {
 	background-image: url("../../assets/images/first.png");
     background-size: 100% 100%;
@@ -7,8 +10,54 @@
 	height:100%; 
 	width:100%; 
 	top:0px; 
-	left:0px; 
-	z-index:-1;
+	left:0px;
+}
+#abouts{
+	position : absolute;
+	top: 105%;
+	border-radius: 25px;
+    border: 2px solid $grey;
+    height : 90%;
+    margin :10px;
+}
+#aboutsbody{
+	overflow-y: auto;
+	height: 70vh;
+	margin : 20px;
+	margin-top : 30px;
+}
+
+#direction {
+	position: absolute;
+	bottom: 0px;
+	left: 50vw;
+	color: $lightblue;
+    text-shadow: 0px 1px 15px $black;
+    cursor: pointer;
+
+    a{
+    	color: $lightblue;
+    }
+}
+
+#profile{
+
+	float : left;
+    margin-right : 15px;
+    margin-bottom : 15px;
+}
+
+#profileimage{
+
+	border: 2px solid $grey;
+    height : 35vh;
+    width : 30vh;
+}
+
+#profiledownload{
+
+	color : $black;
+	cursor : pointer;
 }
 
 #image{
@@ -37,14 +86,17 @@
 	 text-shadow: 1px 1px 15px $black;
 }
 
-#direction {
-	position: absolute;
-	bottom: 0px;
-	left: 50vw;
-	color: $lightblue;
-    text-shadow: 0px 1px 15px $black;
-    cursor: pointer;
+#hirebutton{
+	color : $white;
+	background-color: $lightblue;
+	text-shadow: 0px 1px 15px $black;
+	box-shadow:  1px 1px 15px $black;
+	padding : 10px;
+	font-size : 20px;
+	border: 1px solid $black;
+	cursor : pointer;
 }
+
 .circle-icon{
 	padding: 25px;
 }

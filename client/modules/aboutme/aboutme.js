@@ -1,20 +1,45 @@
 (function (){
 	'use strict';
 	
-	var abooutmeController = function($rootScope){
+	var abooutmeController = function($rootScope,$state){
 		var self = this;
-		$rootScope.active='about'
-		$rootScope.activation = function(title){
-			$rootScope.active=title;
+		
+
+		this.init = function(){
+			$rootScope.active='about'
+				$rootScope.activation = function(title){
+				console.log(title);
+				$rootScope.active=title;
+			};
+
+		
+			this.contentInfo = "Seeking Full Time Opportunities from May'17 | Master's in Computer Science in University of Central Florida";
+		
+
 		};
 
-		this.contentInfo = "Seeking Full Time Opportunities from May'17 | Master's in Computer Science in University of Central Florida";
-		
+		$rootScope.modalSetup = function(content){
+				if(content == 'resume'){
+					$rootScope.modalTitle = 'RESUME';
+					$rootScope.modalPath = '../../assets/certs/sai_chandesh_resume.pdf';
+				}
+				if(content == 'achivement'){
+					$rootScope.modalTitle = 'Tata Consultancy Services Limited - Certificate of Appreciation';
+					$rootScope.modalPath = './../assets/certs/tcs.pdf';
+				}
+
+			};
+
 		this.jump = function(){
-			console.log("hint");
-			var objControl=document.getElementById("abouts");
-			objControl.scrollTop = objControl.offsetTop;
+				var objControl=document.getElementById("abouts");
+				objControl.scrollTop = objControl.offsetTop;
 		}
+
+		this.hire = function(){
+			$state.go("contact");
+		};
+
+		this.init();
 
 	}
 
@@ -32,6 +57,7 @@
 	}])
 	.controller('abooutmeController', [
 		'$rootScope',
+		'$state',
 		abooutmeController
 		]);
 })();

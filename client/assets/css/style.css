@@ -4,7 +4,7 @@
   font-weight: 500;
   font-size: 15px;
   margin: 0px;
-  position: relative;
+  position: fixed;
   overflow-x: hidden; }
   #navigation .navbar-toggle {
     background-color: white;
@@ -20,7 +20,8 @@
     color: #727272; }
     #navigation a:hover {
       background-color: #F56D45;
-      color: white; }
+      color: white;
+      cursor: pointer; }
 
 @media (max-width: 1000px) {
   #navigation .navbar-toggle {
@@ -59,6 +60,9 @@
     overflow-x: hidden;
     margin-left: 15vw; } }
 
+#about {
+  overflow-y: hidden; }
+
 #aboutbody {
   background-image: url("../../assets/images/first.png");
   background-size: 100% 100%;
@@ -68,8 +72,45 @@
   height: 100%;
   width: 100%;
   top: 0px;
-  left: 0px;
-  z-index: -1; }
+  left: 0px; }
+
+#abouts {
+  position: absolute;
+  top: 105%;
+  border-radius: 25px;
+  border: 2px solid #727272;
+  height: 90%;
+  margin: 10px; }
+
+#aboutsbody {
+  overflow-y: auto;
+  height: 70vh;
+  margin: 20px;
+  margin-top: 30px; }
+
+#direction {
+  position: absolute;
+  bottom: 0px;
+  left: 50vw;
+  color: #00e2ff;
+  text-shadow: 0px 1px 15px #000000;
+  cursor: pointer; }
+  #direction a {
+    color: #00e2ff; }
+
+#profile {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px; }
+
+#profileimage {
+  border: 2px solid #727272;
+  height: 35vh;
+  width: 30vh; }
+
+#profiledownload {
+  color: #000000;
+  cursor: pointer; }
 
 #image {
   height: 25vh;
@@ -95,12 +136,14 @@
   font-size: 15px;
   text-shadow: 1px 1px 15px #000000; }
 
-#direction {
-  position: absolute;
-  bottom: 0px;
-  left: 50vw;
-  color: #00e2ff;
+#hirebutton {
+  color: white;
+  background-color: #00e2ff;
   text-shadow: 0px 1px 15px #000000;
+  box-shadow: 1px 1px 15px #000000;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid #000000;
   cursor: pointer; }
 
 .circle-icon {
@@ -129,7 +172,7 @@
   top: 15vh;
   left: 5vw; }
 
-#achievementcontent {
+#achievementbody {
   overflow-y: auto;
   height: 70vh; }
 
@@ -142,42 +185,136 @@
   display: block;
   margin: auto;
   width: 100%;
-  height: 60vh; }
+  height: 70vh; }
 
-#resumecontent {
-  border-radius: 25px;
-  border: 2px solid #727272;
-  padding: 20px;
-  width: 90%;
-  position: absolute;
-  top: 15vh;
-  left: 5vw; }
-
-#resumebody {
+#contactinfobody {
   overflow-y: auto;
   height: 70vh; }
 
-#resume {
+#log {
+  float: left;
+  margin: 5rem;
+  position: relative; }
+
+#download {
+  position: absolute;
   display: block;
   margin: auto;
-  width: 100%;
-  height: 70vh; }
+  color: white;
+  background-color: #F56D45;
+  font-weight: 200;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 10px; }
+  #download:active {
+    outline: 0px auto; }
+  #download:visited {
+    outline: 0px auto; }
 
-#workcontent {
+#downloadresume {
+  padding: 10px;
+  display: block;
+  margin: auto;
+  color: white;
+  background-color: #F56D45;
+  font-weight: 200;
+  font-size: 12px; }
+  #downloadresume:active {
+    outline: 0px auto; }
+  #downloadresume:visited {
+    outline: 0px auto; }
+
+#resumedownload {
+  background: #F56D45;
+  color: white;
+  padding: 10px;
+  cursor: pointer; }
+
+#tab {
+  margin-top: 6rem;
+  position: absolute;
+  padding: 10px; }
+
+#icons {
+  left: 40%;
+  position: fixed;
+  cursor: pointer; }
+  #icons a {
+    color: white;
+    border-radius: 50%;
+    box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15); }
+
+.fa.fa-linkedin-square {
+  color: #F56D45; }
+
+.fa.fa-github {
+  color: #F56D45; }
+
+@media (max-width: 700px) {
+  #download {
+    font-size: 9px;
+    width: 125px; }
+  #imagecontact {
+    height: 120px; }
+  #log {
+    margin: 0rem; }
+  #tab {
+    margin-top: 0px; } }
+
+#educationcontent {
   border-radius: 25px;
   border: 2px solid #727272;
-  padding: 20px;
   width: 90%;
   position: absolute;
   top: 15vh;
-  left: 5vw; }
+  left: 5vw;
+  overflow: hidden; }
 
-h3 {
-  text-decoration: underline; }
-
-#workbody {
+#educationbody {
   overflow-y: auto;
+  height: 70vh;
+  margin: 20px;
+  margin-top: 50px; }
+
+#education {
+  display: block;
+  margin: auto;
   height: 70vh; }
+
+.row {
+  width: 95%;
+  margin-left: 15px; }
+
+#educationhead {
+  background-color: #F56D45;
+  color: white;
+  text-align: center;
+  height: 45px; }
+
+#blocks {
+  overflow-y: auto;
+  height: 90vh;
+  border: 1px solid #727272;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  height: 19.5rem;
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+  cursor: pointer;
+  margin-left: 3rem;
+  padding: 6px; }
+  #blocks:hover {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(46, 61, 73, 0.12);
+    border-radius: 0.125rem;
+    transition: box-shadow 0.3s ease, border 0.3s ease; }
+
+#modal {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1; }
 
 #spinner {
   width: 10%;
@@ -206,3 +343,249 @@ h3 {
 
 ::-webkit-scrollbar-thumb:window-inactive {
   background: #727272; }
+
+@media (max-width: 600px) {
+  #educationhead {
+    height: 8rem; } }
+
+@media (max-width: 600px) and (max-width: 350px) {
+  #educationhead {
+    height: 10rem; } }
+
+#projectcontent {
+  border-radius: 25px;
+  border: 2px solid #727272;
+  width: 90%;
+  position: absolute;
+  top: 15vh;
+  left: 5vw;
+  overflow: hidden; }
+
+#projectbody {
+  overflow-y: auto;
+  height: 70vh; }
+
+#project {
+  display: block;
+  margin: auto;
+  height: 70vh; }
+
+.row {
+  width: 95%;
+  margin-left: 15px; }
+
+#blocks {
+  overflow-y: auto;
+  height: 90vh;
+  border: 1px solid #727272;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  height: 19.5rem;
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+  cursor: pointer;
+  margin-left: 3rem;
+  padding: 6px; }
+
+#blocks:hover {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(46, 61, 73, 0.12);
+  border-radius: 0.125rem;
+  transition: box-shadow 0.3s ease, border 0.3s ease; }
+
+#projecthead {
+  background-color: #F56D45;
+  color: white;
+  text-align: center;
+  height: 7rem; }
+
+#tools {
+  font-weight: bold;
+  color: #000000; }
+
+#modal {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1; }
+
+@media (max-width: 600px) {
+  #projecthead {
+    height: 8rem; } }
+
+@media (max-width: 600px) and (max-width: 350px) {
+  #projecthead {
+    height: 10rem; } }
+
+#skillcontent {
+  border-radius: 25px;
+  border: 2px solid #727272;
+  width: 90%;
+  position: absolute;
+  top: 15vh;
+  left: 5vw;
+  overflow: hidden; }
+
+#skillbody {
+  overflow-y: auto;
+  height: 70vh;
+  margin: 20px;
+  margin-top: 50px; }
+
+#skill {
+  display: block;
+  margin: auto;
+  height: 70vh; }
+
+.row {
+  width: 95%;
+  margin-left: 15px; }
+
+#skilltitle {
+  text-decoration: underline; }
+
+#skillhead {
+  background-color: #F56D45;
+  color: white;
+  text-align: center;
+  height: 45px; }
+
+#techs {
+  font-weight: bold;
+  color: #000000; }
+
+#modal {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1; }
+
+#spinner {
+  width: 10%;
+  margin: auto;
+  margin-top: 30vh; }
+
+@media (max-width: 750px) {
+  #spinner {
+    width: 20%; } }
+
+::-webkit-scrollbar {
+  width: 9px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #727272;
+  -webkit-box-shadow: inset 0 0 6px #727272; }
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #727272; }
+
+@media (max-width: 600px) {
+  #skillhead {
+    height: 8rem; } }
+
+@media (max-width: 600px) and (max-width: 350px) {
+  #skillhead {
+    height: 10rem; } }
+
+#workcontent {
+  border-radius: 25px;
+  border: 2px solid #727272;
+  width: 90%;
+  position: absolute;
+  top: 15vh;
+  left: 5vw;
+  overflow: hidden; }
+
+#workbody {
+  overflow-y: auto;
+  height: 70vh; }
+
+#work {
+  display: block;
+  margin: auto;
+  height: 70vh; }
+
+.row {
+  width: 95%;
+  margin-left: 15px; }
+
+#blocks {
+  overflow-y: auto;
+  height: 90vh;
+  border: 1px solid #727272;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  height: 19.5rem;
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+  cursor: pointer;
+  margin-left: 3rem;
+  padding: 6px; }
+  #blocks:hover {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(46, 61, 73, 0.12);
+    border-radius: 0.125rem;
+    transition: box-shadow 0.3s ease, border 0.3s ease; }
+
+#workhead {
+  background-color: #F56D45;
+  color: white;
+  text-align: center;
+  height: 7rem; }
+
+#tools {
+  font-weight: bold;
+  color: #000000; }
+
+#modal {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1; }
+
+#spinner {
+  width: 10%;
+  margin: auto;
+  margin-top: 30vh; }
+
+@media (max-width: 750px) {
+  #spinner {
+    width: 20%; } }
+
+::-webkit-scrollbar {
+  width: 9px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #727272;
+  -webkit-box-shadow: inset 0 0 6px #727272; }
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #727272; }
+
+@media (max-width: 600px) {
+  #workhead {
+    height: 8rem; } }
+
+@media (max-width: 600px) and (max-width: 350px) {
+  #workhead {
+    height: 10rem; } }

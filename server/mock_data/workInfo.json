@@ -1,18 +1,30 @@
 [
 	{
-		"title" : "Graduate Research Assistant at University of Central Florida (January 2016 - Till Date)",
+		"title" : "Graduate Research Assistant at University of Central Florida<br/>(January 2016 - Till Date)",
+		"techs" : ["Java","JML"],
+		"tools" : ["Java,","JML"],
+		"info" : "I'm currently working under guidance of Dr.Gary T.Leavens on implementation of Enhanced For loop to JML(Java Modeling Language)",
 		"description" : "I'm currently working under guidance of Dr.Gary T.Leavens on implementation of Enhanced For loop to JML(Java Modeling Language)"
 	},
 	{
-		"title" : "Software Developer Intern at Pandera Systems (May 2016 - August 2016)",
-		"description" : "> Developed a web Application for the project which enhances the approach to expanding employee skill sets in a fast paced corporate environment.<br/>> Developed the application from the Scratch with team of 4 members and released the beta version of the application.<br/><br/>Main Technologies: AngularJS, Spring Boot, REST Web Services, gulp, HTML5, CSS3, Sass, Bootstrap 3 and SQL Server and Microsoft Azure Cloud Services.<br/><br/>> Worked in Agile Software Development with JIRA tool.<br/>> Implemented Token (OAuth2 protocol) base security using Restful API.<br/>> Created Virtual Machines on Azure Cloud Services through Azure Java.<br/>> Worked on Unit Testing for front end using Jasmine and Karma.<br/>> Involved in various phases of Software Development Life Cycle (SDLC) of the application like Requirement gathering, Design, Analysis and Code development."
+		"title" : "Software Developer Intern at Pandera Systems<br/>(May 2016 - August 2016)",
+		"description" : "Developed a web Application for the project which enhances the approach to expanding employee skill sets in a fast paced corporate environment.",
+		"techs" : ["AngularJS", "Spring Boot", "REST Web Services", "gulp", "HTML5", "CSS3", "Sass", "Bootstrap 3" ,"SQL Server","Microsoft Azure Cloud Services"],
+		"tools" : ["AngularJS,", "Spring Boot,", "REST Web Services,", "gulp,", "HTML5,", "CSS3,", "Sass,", "Bootstrap 3," ,"SQL Server,","Microsoft Azure Cloud Services."],
+		"info" : "> Developed a web Application for the project which enhances the approach to expanding employee skill sets in a fast paced corporate environment.<br/>> Developed the application from the Scratch with team of 4 members and released the beta version of the application.<br/>> Worked in Agile Software Development with JIRA tool.<br/>> Implemented Token (OAuth2 protocol) base security using Restful API.<br/>> Created Virtual Machines on Azure Cloud Services through Azure Java.<br/>> Worked on Unit Testing for front end using Jasmine and Karma.<br/>> Involved in various phases of Software Development Life Cycle (SDLC) of the application like Requirement gathering, Design, Analysis and Code development."
 	},
 	{
-		"title" : "Graduate Teaching Assistant at University of Central Florida (August 2015 - December 2015)",
-		"description" : "Graduate Teaching Assistant for Intro to C Programming (COP3223) course.<br/>My Primary Responsibilities includes :<br/>> Hold the office hours to help the students to understand the programming concepts in C.<br/>> Grade the assignments and examinations.<br/>> Develop the course materials such as answer keys and supplement notes."
+		"title" : "Graduate Teaching Assistant at University of Central Florida<br/>(August 2015 - December 2015)",
+		"techs" : ["C programming"],
+		"tools" : ["C programming"],
+		"description" : "Grade the examinations and assist the students",
+		"info" : "My Primary Responsibilities includes :<br/>> Hold the office hours to help the students to understand the programming concepts in C.<br/>> Grade the assignments and examinations.<br/>> Develop the course materials such as answer keys and supplement notes."
 	},
 	{
-		"title" : "Assistant System Engineer at Tata Consultancy Services Limited, India (November 2013 - July 2015)",
-		"description" : "Worked on development of Revenue Assurance Application for Telecommunication financial project. This application keep track of commission for every activation and employs various processors for different processing activities.<br/><br/>Main Technologies : Structs2 Framework, JSP, HTML5, CSS3 and MYSQL.<br/><br/>> Developed and implemented the functionalities using Struts2.0 Framework.<br/>> Created and deployed web pages using HTML5, JSP and CSS3.<br/>> Involved in various phases of Software Development Life Cycle (SDLC) of the application like Requirement gathering, Design, Analysis and Code development."
+		"title" : "Assistant System Engineer at Tata Consultancy Services Limited, India<br/>(November 2013 - July 2015)",
+		"techs" : ["Angular.js","Spring MVC","HTML5","CSS3","MYSQL"],
+		"tools" : ["Angular.js,","Spring MVC,","HTML5,","CSS3,","MYSQL."],
+		"description" : "Worked on development of Revenue Assurance Application for Telecommunication financial project",
+		"info" : "Worked on development of Revenue Assurance Application for Telecommunication financial project. This application keep track of commission for every activation and employs various processors for different processing activities.<br/>> Developed and implemented the functionalities using Struts2.0 Framework.<br/>> Created and deployed web pages using HTML5, and CSS3.<br/>> Involved in various phases of Software Development Life Cycle (SDLC) of the application like Requirement gathering, Design, Analysis and Code development."
 	}
 ]

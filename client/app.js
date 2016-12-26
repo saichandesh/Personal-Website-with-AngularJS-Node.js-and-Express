@@ -4,13 +4,14 @@
 	var AppController = function($urlRouterProvider, $locationProvider, $logProvider) {
 
 		
-		// $("button").click(function() {
-		// 	$("ul.nav").show();
-		// });
+		$("button").click(function() {
+			$("ul.nav").show();
+		});
 
-		// $("ul.nav li a").click(function() {
-	 //        $("ul.nav").hide();
-		// });
+		$("ul.nav li a").click(function() {
+	        $("ul.nav").hide();
+	        $("button").click();
+		});
 
 		$urlRouterProvider
 		.when('/resume', [
@@ -28,14 +29,14 @@
 				$state.go('work');
 			}
 		])
-		.when('/projects', [
+		.when('/project', [
 			'$state', function($state) {
-				$state.go('projects');
+				$state.go('project');
 			}
 		])
-		.when('/skills', [
+		.when('/skill', [
 			'$state', function($state) {
-				$state.go('skills');
+				$state.go('skill');
 			}
 		])
 		.when('/achivements', [

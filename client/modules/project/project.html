@@ -1,0 +1,45 @@
+<div id="projectcontent">
+	<div id="projectbody">
+		<div ng-if="project.contents.length==0" id="spinner">
+			<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+		</div>
+		<div ng-if="project.contents.length>0">
+			<div class="row" >
+				<div class="col-md-5 col-md-offset-1 col-sm-12" id="blocks" ng-repeat="content in project.contents"  ng-click="project.setContent(content)" data-toggle="modal" data-target="#myModal">
+					<p id="projecthead">{{content.title}}</p>
+					<p>{{content.description}}</p>
+					<span id="tools">Technologies: 
+						<span ng-repeat="tool in content.tools">{{tool}} </span>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">{{project.currentProject.title}}</h4>
+      </div>
+      <div class="modal-body">
+        <p ng-bind-html="project.currentProject.info"></p>
+        <p>Project Link(Github) : <a href="{{project.currentProject.link}}" target="blank">{{project.currentProject.link}}</a></p>
+        <span id="tools">Main Technologies: <br/>
+	        <span ng-repeat="tech in project.currentProject.techs">
+	        	<p>{{tech}}</p>
+	        </span>
+        </span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>

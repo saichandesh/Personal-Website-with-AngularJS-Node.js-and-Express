@@ -1,0 +1,68 @@
+<div id="workcontent">
+	<div id="contactinfobody">
+		<div ng-if="contact.contents.length==0" id="spinner">
+			<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+		</div>
+		<div ng-if="contact.contents.length>0" ng-repeat="content in contact.contents">
+			<span id="log" ng-show="contact.widthSize >400">
+				<img id="imagecontact" src="../../assets/images/contact.png"/><br/><br/>
+				<span id="resumedownload" data-toggle="modal" data-target="#downloadModal"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;DOWNLOAD RESUME  <br/><br/></span>
+			</span>
+			<span id="tab">
+				<table class="table table-stripped">
+					<tbody>
+						<tr>
+							<td>
+								 Name : {{content.name}}
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Phone : {{content.phone}}
+							</td>
+						</tr>
+						<tr>
+							<td>
+								 Email : {{content.email}}
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Address : {{content.address}}
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<span id="icons" ng-show="contact.widthSize >400">
+					<a ng-href="https://www.linkedin.com/in/saichandesh" target="none"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>&nbsp;
+					<a ng-href="https://github.com/saichandesh" target="blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+				</span>
+				<span id="resumedownload" data-toggle="modal" ng-show="contact.widthSize <=400" data-target="#resumedownload"><i class="fa fa-download" aria-hidden="true" ></i>&nbsp;&nbsp;DOWNLOAD RESUME  </button></a><br/><br/>
+				<span id="icons" ng-show="contact.widthSize <=400">
+					<a ng-href="https://www.linkedin.com/in/saichandesh" target="blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>&nbsp;
+					<a ng-href="https://github.com/saichandesh" target="blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+				</span>
+			</span>
+		</div>
+	</div>
+</div>
+<!-- Modal -->
+<div id="downloadModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">RESUME</h4>
+      </div>
+      <div class="modal-body">
+        <iframe ng-src="../../assets/certs/sai_chandesh_resume.pdf" id="achievement" frameborder="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>

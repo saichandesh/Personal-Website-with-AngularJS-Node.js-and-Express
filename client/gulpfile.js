@@ -10,6 +10,8 @@ var merge = require('merge-stream');
 var uglify = require('gulp-uglify');
 var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
+var war = require('gulp-war');
+var zip = require('gulp-zip');
 
 // -----[ JS files ]---------------------------------------------------------------
 var js = [ 'bootstrap/js/bootstrap.min.js',
@@ -68,8 +70,24 @@ gulp.task('sass',function(){
 			    .pipe(gulp.dest('./assets/css/'))
 	  		    .pipe(connect.reload());
 });
-
-			  
+// -----[ War Task ]-----------------
+gulp.task('war', function () {
+	return gulp.src([
+		'assets*/**/*',
+		'modules*/**/*.html',
+		'src/WEB-INF*/**/*'
+	])
+	.pipe(war({
+		welcome: 'index.html',
+		displayName: 'Sai Chandesh Gurramkonda',
+		webappExtras: [
+			'<filter><filter-name>UrlRewriteFilter</filter-name><filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class></filter><filter-mapping><filter-name>UrlRewriteFilter</filter-name><url-pattern>/*</url-pattern><dispatcher>REQUEST</dispatcher><dispatcher>FORWARD</dispatcher></filter-mapping>'
+		]
+	}))
+	.pipe(zip('saichandesh.war'))
+	.pipe(gulp.dest("target/"));
+});
+		  
 
 // -----[ HTML Task ]------------
 gulp.task('html', function() {

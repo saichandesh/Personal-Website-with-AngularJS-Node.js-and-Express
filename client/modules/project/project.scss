@@ -1,0 +1,75 @@
+#projectcontent{
+	border-radius: 25px;
+    border: 2px solid $grey;
+    width: 90%;
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+    overflow : hidden;
+}
+
+#projectbody{
+	overflow-y: auto;
+	height: 70vh;
+}
+
+#project{
+	display: block;
+    margin: auto;
+    height: 70vh;
+}
+.row{
+    width: 95%;
+    margin-left: 15px;
+}
+
+#blocks{
+    overflow-y: auto;
+    height: 90vh;
+    border: 1px solid $grey;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; 
+    height: 19.5rem;
+    box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+    cursor: pointer;
+    margin-left: 3rem;
+    padding: 6px;
+}
+
+#blocks:hover {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(46,61,73,0.12);
+    border-radius: 0.125rem;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+#projecthead{
+    background-color : $orange;
+    color: $white;
+    text-align: center;
+    height: 7rem;
+}
+
+#tools{
+    font-weight: bold;
+    color: $black;
+}
+
+#modal{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+@media(max-width:600px){
+    #projecthead{
+        height: 8rem;
+    } 
+    @media(max-width:350px){
+        #projecthead{
+            height: 10rem;
+        } 
+    }
+}

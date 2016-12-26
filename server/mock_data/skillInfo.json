@@ -1,0 +1,22 @@
+[
+	{
+		"title" : "Web Technologies",
+		"techs" : ["Angular2,","AngualrJS,", "TypeScript,", "ReactJS,", "Socket.IO,", "ES6,", "JavaScript,", "Sass,", "Bootstrap 3,", "HTML5," ,"and CSS3"]
+	},
+	{
+		"title" : "Programming Languages and Frameworks",
+		"techs" : ["Java,", "C,", "C++," ,"Spring Boot,", "and Express"]
+	},
+	{
+		"title" : "Database and Server Side Technologies",
+		"techs" : ["Node.js,", "MongoDB,", "SQL,","and PHP"]
+	},
+	{
+		"title" : "Version Control and Project Management Tools",
+		"techs" : ["Gulp,", "Maven,", "Babel,", "Webpack,", "Git,", "BitBucket,","and JIRA"]
+	},
+	{
+		"title" : "Unit Testing Frameworks",
+		"techs" : ["Jasmine,", "and Karma"]
+	}
+]

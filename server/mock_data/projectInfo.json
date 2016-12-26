@@ -1,0 +1,35 @@
+[
+
+	{
+		"title" : "Polling App with React.js, Socket.io , Express and Node.js",
+		"techs" : ["React.js", "Socket.io","Express.js","Node.js","ES6","Babel","Webpack"],
+		"tools" : ["React.js,", "Socket.io,","Express.js,","Node.js,","ES6,","Babel,","Webpack."],
+		"description" : "This application will allow a speaker to start a presentation, and interact with audience members by asking questions and graphing their responses.",
+		"info" : "This application will allow a speaker to start a presentation, and interact with audience members by asking questions and graphing their responses.",
+		"link" : "https://github.com/saichandesh/Polling-App-With-React.js-SocketIO-and-Node.js"
+	},
+	{
+		"title" : "MEAN stack based Car Rental Web Application (AngularJS, Node.js, Express and Mongodb)",
+		"techs" : ["Angular.js", "Node.js","Express.js","Mongodb","Gulp","Sass","HTML5","CSS3"],
+		"tools" : ["Angular.js,", "Node.js,","Express.js,","Mongodb,","Gulp,","Sass,","HTML5,","CSS3."],
+		"description" : "A web based application which can be used by the car rental stores to keep track of the available cars , classes of the cars, price of the cars, reservation times and registered users.",
+		"info" : "A web based application which can be used by the car rental stores to keep track of the available cars , classes of the cars, price of the cars, reservation times and registered users.",
+		"link" : "https://github.com/saichandesh/MEAN-Stack-Based-Car-Rental-Web-Application.git"
+	},
+	{
+		"title" : "Personal Website (AngularJS, Node.js and Express)",
+		"techs" : ["Angular.js", "Node.js","Express.js","Sass","Gulp","HTML5","CSS3"],
+		"tools" : ["Angular.js,", "Node.js,","Express.js,","Sass,","Gulp,","HTML5,","CSS3."],
+		"description" : "This application will allow a speaker to start a presentation, and interact with audience members by asking questions and graphing their responses.",
+		"info" : "This application will allow a speaker to start a presentation, and interact with audience members by asking questions and graphing their responses.",
+		"link" : "https://github.com/saichandesh/Personal-Website-with-AngularJS-Node.js-and-Express.git"
+	},
+	{
+		"title" : "Novel Approach to Twitter Sentimental Analysis by applying Machine Learning Algorithm namely Naive Bayes Classifier using Python",
+		"techs" : ["Python", "Naive Bayes Classifier"],
+		"tools" : ["Python,", "Naive Bayes Classifier"],
+		"description" : "A sentimental analyzer is built to classify the tweets into positive , Negative and Neutral using machine learning algorithm namely Naive Bayes Classifier.",
+		"info" : "A sentimental analyzer is built to classify the tweets into positive , Negative and Neutral using machine learning algorithm namely Naive Bayes Classifier. Using this analyzer,<br/>> Marketers can use this to research public opinion of their company and products, or to analyze customer satisfaction<br/>> Consumers can use sentiment analysis to research products or services before making a purchase.",
+		"link" : "https://github.com/saichandesh/Twitter-Sentimental-Analysis-Naive-Bayes-Classification.git"
+	}
+]

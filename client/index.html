@@ -31,18 +31,39 @@
 		<div class="collapse navbar-collapse" id="collapsemenu">
 			<ul class="nav navbar-nav navbar-right">
 				<li ng-class="$root.active" ng-click="$root.activation('about')"><a href="/">About Me</a></li>
-				<li ng-class="$root.active" ng-click="$root.activation('resume')"><a href="/resume">Resume</a></li>
+				<li ng-class="$root.active" ng-click="$root.activation('resume')"><a data-toggle="modal" data-target="#resumeModal" ng-click="$root.modalSetup('resume')">Resume</a></li>
 				<li ng-class="$root.active" ng-click="$root.activation('education')"><a href="/education">Education</a></li>
 				<li ng-class="$root.active" ng-click="$root.activation('work')"><a href="/work">Work Experience</a></li>
-				<li ng-class="$root.active" ng-click="$root.activation('project')"><a href="/projects">Projects</a></li>
-				<li ng-class="$root.active" ng-click="$root.activation('skill')"><a href="/skills">Skills</a></li>
-				<li ng-class="$root.active" ng-click="$root.activation('achievement')"><a href="/achievements">Achivements and Certifications</a></li>
+				<li ng-class="$root.active" ng-click="$root.activation('project')"><a href="/project">Projects</a></li>
+				<li ng-class="$root.active" ng-click="$root.activation('skill')"><a href="/skill">Skills</a></li>
+				<li ng-class="$root.active" ng-click="$root.activation('achievement')"><a data-toggle="modal" data-target="#resumeModal" ng-click="$root.modalSetup('achivement')">Achivements and Certifications</a></li>
 				<li ng-class="$root.active" ng-click="$root.activation('contact')"><a href="/contact">Contact</a></li>
 			</ul>
 		</div>
 	</nav>
 	<!-- Routing-->
 		<div ui-view></div>
+
+	<!-- Resume Modal -->
+<div id="resumeModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">{{$root.modalTitle}}</h4>
+		      </div>
+		      <div class="modal-body">
+		      	<iframe ng-src="{{$root.modalPath}}" id="achievement" frameborder="0"></iframe>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+
+	  </div>
+</div>
 
 </body>
 </html>

@@ -1,0 +1,97 @@
+#skillcontent{
+    border-radius: 25px;
+    border: 2px solid $grey;
+    width: 90%;
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+    overflow : hidden;
+}
+
+#skillbody{
+    overflow-y: auto;
+    height: 70vh;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+
+#skill{
+    display: block;
+    margin: auto;
+    height: 70vh;
+}
+.row{
+    width: 95%;
+    margin-left: 15px;
+}
+
+#skilltitle{
+    text-decoration : underline;    
+}
+
+#skillhead{
+    background-color : $orange;
+    color: $white;
+    text-align: center;
+    height: 45px;
+}
+
+#techs{
+    font-weight: bold;
+    color: $black;
+}
+
+#modal{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+
+#spinner{
+    width: 10%;
+    margin: auto;
+    margin-top: 30vh;
+}
+
+@media(max-width:750px){
+    #spinner{
+        width: 20%;
+    }    
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: $grey; 
+    -webkit-box-shadow: inset 0 0 6px $grey; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: $grey; 
+}
+
+
+@media(max-width:600px){
+    #skillhead{
+        height: 8rem;
+    } 
+    @media(max-width:350px){
+        #skillhead{
+            height: 10rem;
+        } 
+    }
+}

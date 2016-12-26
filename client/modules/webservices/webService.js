@@ -45,8 +45,7 @@
 		APIManager.doGetAll = function(networkConfig) {
 
 			networkConfig = APIManager.genericResourceURI(networkConfig);
-			var actualURL = devURL + '/' + networkConfig.url;
-
+			var actualURL = URL + '/' + networkConfig.url;
 			var resourceObject = $resource(actualURL, networkConfig.params, {
 				get: {
 					method: 'GET',

@@ -1,13 +1,42 @@
-<div id="aboutbody">
-	<img src="../assets/images/chandesh.jpg" id="image"><br/>
-	<h2 id="header">Hi! I'M <span id="head1">SAI CHANDESH GURRAMKONDA</span><br/>
-		<span id="content">{{aboutme.contentInfo}}</span>
-		<br/><br/>
-		<button type="button" class="btn btn-default"><i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;HIRE ME</button>	
-	</h2>
-	<span id="direction"><i class="fa fa-angle-double-down fa-3x" aria-hidden="true" href="#button"></i></span>
-</div>
+<div id="about">
+	<div id="aboutbody">
+		<img src="../assets/images/chandesh.jpg" id="image"><br/>
+		<h2 id="header">Hi! I'M <span id="head1">SAI CHANDESH GURRAMKONDA</span><br/>
+			<span id="content">{{aboutme.contentInfo}}</span>
+			<br/><br/>
+			<span id="hirebutton" ng-click="aboutme.hire()"><i class="fa fa-location-arrow" aria-hidden="true"></i>&nbsp;HIRE ME</span>
+		</h2>
+		<span id="direction"><a href="#abouts"><i class="fa fa-angle-double-down fa-3x" aria-hidden="true" ></i></a></span>
+	</div>
+	<div id="abouts">
+		<div id="aboutsbody">
+			<span id="profile"><img id="profileimage" src="../../assets/images/chandesh.jpg" /><br/><br/>
+			<span id="profiledownload" data-toggle="modal" data-target="#profilemodal"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;DOWNLOAD RESUME</span></span>
+			<p>I am a Graduate Student at Department of Computer Science, University of Central Florida, Orlando,USA. I am working as Graduate Research Assistant under Dr.Gary T Leavens. My research includes implementing loop invariant and variant conditions for Enhanced For Loop to OpenJML, which checks the behavior of the Enhanced For Loops in Java Programs during its run time. 
 
-<div id="abouts">
-	<p>sai</p>
+		      I interned with Pandera Sytems as a Software Developer where my team build an web application that enhances the approach to expanding employee skill sets in a fast paced corporate environment using AngularJS ,Java Spring Boot and OAUTH2 protocol. t. Apart from that I have 1year 9 months of work experience as a Assistant System Engineer in Tata Consultancy Services Limited(TCS), India. My work experience includes design and implement the web based application usingStructs2 Framework, JSP, HTML5, CSS3 and MYSQL.
+
+		      I would be graduating in May 2017 and I am presently looking for Full time opportunities to apply my workplace and educational experience in building the applications.</p>
+		</div>
+	</div>
+</div>
+<!-- Modal -->
+<div id="profilemodal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">RESUME</h4>
+      </div>
+      <div class="modal-body">
+        <iframe ng-src="../../assets/certs/sai_chandesh_resume.pdf" id="achievement" frameborder="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
 </div>

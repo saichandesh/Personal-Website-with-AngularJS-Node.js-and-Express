@@ -1,0 +1,111 @@
+#educationcontent{
+    border-radius: 25px;
+    border: 2px solid $grey;
+    width: 90%;
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+    overflow : hidden;
+}
+
+#educationbody{
+    overflow-y: auto;
+    height: 70vh;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+
+#education{
+    display: block;
+    margin: auto;
+    height: 70vh;
+}
+.row{
+    width: 95%;
+    margin-left: 15px;
+}
+
+
+#educationhead{
+    background-color : $orange;
+    color: $white;
+    text-align: center;
+    height: 45px;
+}
+
+#blocks{
+    overflow-y: auto;
+    height: 90vh;
+    border: 1px solid $grey;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; 
+    height: 19.5rem;
+    box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+    cursor: pointer;
+    margin-left: 3rem;
+    padding: 6px;
+    &:hover {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        background: #fff;
+        box-shadow: 0 2px 4px 0 rgba(46,61,73,0.12);
+        border-radius: 0.125rem;
+        transition: box-shadow 0.3s ease, border 0.3s ease;
+    }
+}
+
+
+#modal{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+
+#spinner{
+    width: 10%;
+    margin: auto;
+    margin-top: 30vh;
+}
+
+@media(max-width:750px){
+    #spinner{
+        width: 20%;
+    }    
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: $grey; 
+    -webkit-box-shadow: inset 0 0 6px $grey; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: $grey; 
+}
+
+
+@media(max-width:600px){
+    #educationhead{
+        height: 8rem;
+    } 
+    @media(max-width:350px){
+        #educationhead{
+            height: 10rem;
+        } 
+    }
+}

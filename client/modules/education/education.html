@@ -1,0 +1,16 @@
+<div id="educationcontent">
+	<div id="educationbody">
+		<div ng-if="education.contents.length==0" id="spinner">
+			<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+		</div>
+		<div ng-if="education.contents.length>0">
+			<div class="row" >
+				<div class="col-md-5 col-md-offset-1 col-sm-12" id="blocks" ng-repeat="content in education.contents">
+					<p id="educationhead" ng-bind-html="content.degree"></p>
+					<p ng-bind-html="content.univ"></p>
+					<span>GPA : {{content.gpa}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

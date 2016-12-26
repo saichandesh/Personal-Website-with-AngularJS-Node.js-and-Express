@@ -3,9 +3,42 @@
 		<div ng-if="work.contents.length==0" id="spinner">
 			<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
 		</div>
-		<div ng-if="work.contents.length>0" ng-repeat="content in work.contents">
-			<h3>{{content.title}}</h3>
-			<p ng-bind-html="content.description"></p>
+		<div ng-if="work.contents.length>0">
+			<div class="row" >
+				<div class="col-md-5 col-md-offset-1 col-sm-12" id="blocks" ng-repeat="content in work.contents"  ng-click="work.setContent(content)" data-toggle="modal" data-target="#myModal">
+					<p id="workhead" ng-bind-html="content.title"></p>
+					<p ng-bind-html="content.description"></p>
+					<span id="tools">Main Technologies worked on: 
+						<span ng-repeat="tool in content.tools">{{tool}} </span>
+					</span>
+				</div>
+			</div>
 		</div>
 	</div>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" ng-bind-html="work.currentwork.title"></h4>
+      </div>
+      <div class="modal-body">
+        <p ng-bind-html="work.currentwork.info"></p>
+        <span id="tools">Main Technologies worked on: <br/>
+	        <span ng-repeat="tech in work.currentwork.techs">
+	        	<p>{{tech}}</p>
+	        </span>
+        </span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
 </div>

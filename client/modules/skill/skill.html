@@ -1,0 +1,14 @@
+<div id="skillcontent">
+	<div id="skillbody">
+		<div ng-if="skill.contents.length==0" id="spinner">
+			<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+		</div>
+		<div ng-if="skill.contents.length>0">
+			<div ng-repeat="content in skill.contents">
+				<span id="skilltitle"><strong>{{content.title}} </strong></span>: 
+				<span ng-repeat="tech in content.techs">{{tech}} </span><br/><br/>
+			</div>
+		</div>
+	</div>
+</div>
+
